@@ -1,4 +1,8 @@
 Interview::Application.routes.draw do
+  resources :users
+
+  resources :resumes
+
   resources :names
 
   # The priority is based upon order of creation:
@@ -51,6 +55,9 @@ Interview::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'names#index'
+  
+  #devise_for :admins
+  #mount RailsAdmin::Engine => '/rails_admin', :as => 'rails_admin'
 
   # See how all your routes lay out with "rake routes"
 
