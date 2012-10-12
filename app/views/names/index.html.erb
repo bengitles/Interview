@@ -1,7 +1,8 @@
 <h1>Listing names</h1>
 
-<table>
+<table class = table table-bordered>
   <tr>
+    <th>Name</th>
     <th>Time available</th>
     <th>Essay</th>
     <th></th>
@@ -11,6 +12,7 @@
 
 <% @names.each do |name| %>
   <tr>
+    <td><%= name.Name %></td>
     <td><%= name.Time_Available %></td>
     <td><%= name.Essay %></td>
     <td><%= link_to 'Show', name %></td>

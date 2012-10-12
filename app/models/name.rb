@@ -1,3 +1,3 @@
 class Name < ActiveRecord::Base
-  attr_accessible :Essay, :Time_Available
+  attr_accessible :Name, :Essay, :Time_Available
 end

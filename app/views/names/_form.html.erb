@@ -12,8 +12,17 @@
   <% end %>
 
   <div class="container">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="container">
     <%= f.label :Time_Available %><br />
-    <%= f.text_field :Time_Available %>
+	<%= check_box_tag(:time, "nine o'clock") %>
+	<%= label_tag(:time_nine, "9:00-10:00AM") %>
+	<%= check_box_tag(:time, "ten o'clock") %>
+	<%= label_tag(:time_ten, "10:00-11:00AM") %>
+	<%= check_box_tag(:time, "eleven o'clock") %>
+	<%= label_tag(:time_eleven, "11:00AM-12:00PM") %>
   </div>
   <div class="container">
     <%= f.label :Essay %><br />
