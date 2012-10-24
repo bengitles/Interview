@@ -16,9 +16,9 @@ gem 'devise'
 gem 'rails_admin'
 gem 'debugger'
 
-group :test do
-  gem 'capybara'
-end
+#group :test do
+ # gem 'capybara'
+#end
 
 group :development, :test do
   gem 'debugger'
