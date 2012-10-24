@@ -7,7 +7,7 @@ describe Name do
   end
 end
 
-'names#show'_path
+names_path
 click_link "New Name"
 fill_in "Name", with: "A bug"
 click_button "Create Name"
