@@ -7,7 +7,7 @@ describe Name do
   end
 end
 
-visitpledges_path
+'names#show'_path
 click_link "New Name"
 fill_in "Name", with: "A bug"
 click_button "Create Name"
