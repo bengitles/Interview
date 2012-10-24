@@ -1,4 +1,6 @@
 Interview::Application.routes.draw do
+  resources :pledges
+
   resources :users
 
   resources :resumes

@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+   gem 'rspec-rails'
    gem 'sqlite3'
 end
 group :production do 
@@ -13,6 +14,15 @@ group :production do
 end
 gem 'devise'
 gem 'rails_admin'
+gem 'debugger'
+
+group :test do
+  gem 'capybara'
+end
+
+group :development, :test do
+  gem 'debugger'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
