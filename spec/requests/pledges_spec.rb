@@ -8,4 +8,14 @@ describe "Pledges" do
       response.status.should be(200)
     end
   end
+  describe "No essay" do
+    it "has an essay", js: true do
+      visit names_path
+      click_link "New Name"
+      fill_in "Name", with: "A bug"
+      click_button "Create Name"
+      error_message = "Essay can't be blank"
+      page.should have_content(error_message)
+    end
+  end
 end
