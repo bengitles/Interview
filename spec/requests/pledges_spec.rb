@@ -18,4 +18,11 @@ describe "Pledges" do
       page.should have_content(error_message)
     end
   end
+  #describe "Not signed in" do
+  #  it "is signed in" do
+  #    before do
+  #      sign_in @user
+  #    end
+  #  end
+  #end
 end

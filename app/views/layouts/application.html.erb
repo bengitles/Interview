@@ -10,6 +10,13 @@
 </head>
 <body>
 
+	<% if alert %>
+		<div class="alert alert-error"> <%= alert %>
+	<% end %>
+	<% if notice %>
+		<div class="notice notice-error"> <%= notice %>
+	<% end %>
+	
 <%= yield %>
 
 </body>
