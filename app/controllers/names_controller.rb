@@ -13,7 +13,7 @@ class NamesController < ApplicationController
   # GET /names/1
   # GET /names/1.json
   def show
-    @name = Name.find(params[:id])
+    @name = current_user.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +24,7 @@ class NamesController < ApplicationController
   # GET /names/new
   # GET /names/new.json
   def new
-    @name = Name.new
+    @name = current_user.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +34,13 @@ class NamesController < ApplicationController
 
   # GET /names/1/edit
   def edit
-    @name = Name.find(params[:id])
+    @name = current_user.find(params[:id])
   end
 
   # POST /names
   # POST /names.json
   def create
-    @name = Name.new(params[:name])
+    @name = current_user.new(params[:name])
 
     respond_to do |format|
       if @name.save
@@ -56,7 +56,7 @@ class NamesController < ApplicationController
   # PUT /names/1
   # PUT /names/1.json
   def update
-    @name = Name.find(params[:id])
+    @name = current_user.find(params[:id])
 
     respond_to do |format|
       if @name.update_attributes(params[:name])
@@ -72,7 +72,7 @@ class NamesController < ApplicationController
   # DELETE /names/1
   # DELETE /names/1.json
   def destroy
-    @name = Name.find(params[:id])
+    @name = current_user.find(params[:id])
     @name.destroy
 
     respond_to do |format|
