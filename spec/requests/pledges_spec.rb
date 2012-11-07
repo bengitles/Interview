@@ -10,10 +10,10 @@ describe "Pledges" do
   end
   describe "No essay" do
     it "has an essay", js: true do
-      visit names_path
-      click_link "New Name"
+      visit apps_path
+      click_link "New App"
       fill_in "Name", with: "A bug"
-      click_button "Create Name"
+      click_button "Create App"
       error_message = "Essay can't be blank"
       page.should have_content(error_message)
     end

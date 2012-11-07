@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Name do
+describe App do
   it "requires a name and essay" do
     #debugger;1
     subject.should_not be_valid
