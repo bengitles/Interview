@@ -50,6 +50,7 @@ class AppsController < ApplicationController
       if @app.save
         format.html { redirect_to @app, notice: 'App was successfully created.' }
         format.json { render json: @app, status: :created, location: @app }
+        Notifications.new_app.deliver
       else
         format.html { render action: "new" }
         format.json { render json: @app.errors, status: :unprocessable_entity }
@@ -85,3 +86,5 @@ class AppsController < ApplicationController
     end
   end
 end
+
+

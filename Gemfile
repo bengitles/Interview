@@ -8,6 +8,7 @@ gem 'rails', '3.2.8'
 group :development, :test do
    gem 'rspec-rails'
    gem 'sqlite3'
+   gem 'letter_opener'
 end
 
 group :production do 
