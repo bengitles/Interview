@@ -6,9 +6,9 @@ class Notifications < ActionMailer::Base
   #
   #   en.notifications.new_app.subject
   #
-  default from: "bengitles@gmail.com"
+  default from: "gitlesb@seas.upenn.edu"
   def new_app
     @greeting = "Hi"
-    mail to: current_user.email
+    mail to:"bengitles@gmail.com"
   end
 end
