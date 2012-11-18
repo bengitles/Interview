@@ -75,4 +75,6 @@ Interview::Application.configure do
     :domain => 'heroku.com'
   }
   
+  config.assets.compile = true
+  
 end
