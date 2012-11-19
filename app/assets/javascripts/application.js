@@ -18,5 +18,5 @@
 $(function () {
 	var $welcome = $("#welcome");
 	$welcome.click(function () {
-		$welcome.text("");
+		$("#welcome").toggle();
 });
