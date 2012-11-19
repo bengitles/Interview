@@ -15,3 +15,8 @@
 //= require twitter/bootstrap
 //= require_tree .
 
+$(function () {
+	var $welcome = $("#welcome");
+	$welcome.click(function () {
+		$welcome.text("");
+});
