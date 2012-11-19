@@ -14,11 +14,4 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-$(document).ready(function() {
-	//$("#welcome").hide();
-	alert("Alert!");
-    //var $display = $("#welcome");
-    //$display.click(function() {
-    //    $display.text("");
-    //});
-});​
+
