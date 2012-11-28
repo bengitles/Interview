@@ -18,5 +18,6 @@
 $(function () {
 	var $welcome = $("#welcome");
 	$welcome.click(function () {
-		$("#welcome").toggle();
+		$("#welcome").hide();
+	});
 });
