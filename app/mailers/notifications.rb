@@ -8,8 +8,8 @@ class Notifications < ActionMailer::Base
   #
   
   default from: "bengitles@gmail.com"
-  def new_app
+  def new_app (current_user)
     @greeting = "Hi"
-    mail to: "bengitles@gmail.com"
+    mail to: current_user.email
   end
 end

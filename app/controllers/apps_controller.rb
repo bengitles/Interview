@@ -48,7 +48,7 @@ class AppsController < ApplicationController
 
     respond_to do |format|
       if @app.save
-        Notifications.new_app.deliver
+        Notifications.new_app(current_user).deliver
         format.html { redirect_to @app, notice: 'App was successfully created.' }
         format.json { render json: @app, status: :created, location: @app }
       else
