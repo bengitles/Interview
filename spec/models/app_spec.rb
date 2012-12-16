@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe App do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "requires a name" do
+    subject.should_not be_valid
+  end
 end

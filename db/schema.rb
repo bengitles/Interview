@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121216002901) do
+ActiveRecord::Schema.define(:version => 20121216010052) do
 
   create_table "apps", :force => true do |t|
-    t.string   "name"
     t.string   "email"
     t.text     "education"
     t.text     "essay"
@@ -24,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20121216002901) do
     t.text     "previous_experience"
     t.text     "references"
     t.text     "resume"
+    t.string   "name_of_application"
   end
 
   add_index "apps", ["user_id"], :name => "index_apps_on_user_id"

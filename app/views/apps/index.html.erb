@@ -1,12 +1,9 @@
 <h1>AppHub</h1>
+<h4>Signed in as: <%@user_name%> </h4>
 
 <table class = "table table-hover">
   <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Education</th>
-    <th>Essay</th>
-    <th>User</th>
+    <th>Name of App</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,10 +11,7 @@
 
 <% @apps.each do |app| %>
   <tr>
-    <td><%= app.name %></td>
-    <td><%= app.email %></td>
-    <td><%= app.education %></td>
-    <td><%= app.essay %></td>
+    <td><%= app.name_of_application %></td>
     <td><%= link_to 'Show', app %></td>
     <td><%= link_to 'Edit', edit_app_path(app) %></td>
     <td><%= link_to 'Destroy', app, method: :delete, data: { confirm: 'Are you sure?' } %></td>
